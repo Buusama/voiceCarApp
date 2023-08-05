@@ -1,0 +1,106 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back_dir"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="466dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/forward_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/forw" />
+        />
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/forward_btn"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/reverse_btn"
+            android:background="@drawable/le" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/forward_btn"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/reverse_btn"
+            android:background="@drawable/rig" />
+
+        <Button
+            android:id="@+id/reverse_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/left_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rev" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sto" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/auto_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Auto"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/voice_Btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/voi" />
+
+        <Button
+            android:id="@+id/manual_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Manual"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:max="250"
+        android:progress="150"
+        android:progressTint="#2196F3"
+        android:thumbTint="#2196F3"
+        android:min="20"
+        />
+
+</LinearLayout>
